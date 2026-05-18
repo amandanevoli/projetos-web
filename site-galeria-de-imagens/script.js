@@ -1,11 +1,8 @@
-function abrirModal(img) {
-    let modal = document.getElementById("modal");
-    let modalImg = document.getElementById("modalImg");
-
-    modal.style.display = "flex";
-    modalImg.src = img.src;
+function openModal(src) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modalImg").src = src;
 }
 
-function fecharModal() {
+function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
