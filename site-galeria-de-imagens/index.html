@@ -2,49 +2,53 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria Palmeiras</title>
+    <title>SE Palmeiras</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Galeria do Palmeiras</h1>
+<header class="navbar">
+    <h2>Palmeiras+</h2>
+</header>
 
-    <div class="menu">
-        <button onclick="mostrarGaleria('titulos')">Títulos</button>
-        <button onclick="mostrarGaleria('craques')">Craques</button>
-        <button onclick="mostrarGaleria('momentos')">Momentos</button>
+<section class="hero">
+    <h1>História do Palmeiras</h1>
+    <p>Títulos, craques e momentos históricos do Palmeiras</p>
+</section>
+
+<section class="row">
+    <h2>Títulos</h2>
+    <div class="row-posters">
+        <img src="img/t1.jpg" onclick="abrirModal(this)">
+        <img src="img/t2.jpg" onclick="abrirModal(this)">
+        <img src="img/t3.jpg" onclick="abrirModal(this)">
     </div>
+</section>
 
-    <div id="titulos" class="galeria">
-        <h2>Títulos Históricos</h2>
-
-        <img src="img/titulo1.jpg" onclick="ampliar(this)">
-        <img src="img/titulo2.jpg" onclick="ampliar(this)">
-        <img src="img/titulo3.jpg" onclick="ampliar(this)">
+<section class="row">
+    <h2>Craques</h2>
+    <div class="row-posters">
+        <img src="img/c1.jpg" onclick="abrirModal(this)">
+        <img src="img/c2.jpg" onclick="abrirModal(this)">
+        <img src="img/c3.jpg" onclick="abrirModal(this)">
     </div>
+</section>
 
-    <div id="craques" class="galeria" style="display:none;">
-        <h2>Craques Históricos</h2>
-
-        <img src="img/craque1.jpg" onclick="ampliar(this)">
-        <img src="img/craque2.jpg" onclick="ampliar(this)">
-        <img src="img/craque3.jpg" onclick="ampliar(this)">
+<section class="row">
+    <h2>Momentos Históricos</h2>
+    <div class="row-posters">
+        <img src="img/m1.jpg" onclick="abrirModal(this)">
+        <img src="img/m2.jpg" onclick="abrirModal(this)">
+        <img src="img/m3.jpg" onclick="abrirModal(this)">
     </div>
+</section>
 
-    <div id="momentos" class="galeria" style="display:none;">
-        <h2>Momentos Marcantes</h2>
+<div id="modal" onclick="fecharModal()">
+    <img id="modalImg">
+</div>
 
-        <img src="img/momento1.jpg" onclick="ampliar(this)">
-        <img src="img/momento2.jpg" onclick="ampliar(this)">
-        <img src="img/momento3.jpg" onclick="ampliar(this)">
-    </div>
+<script src="script.js"></script>
 
-    <div id="modal" onclick="fecharModal()">
-        <img id="imgModal">
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
