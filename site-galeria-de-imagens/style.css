@@ -103,16 +103,16 @@ body{
     border-radius:10px;
 }
 
-.carousel{
+.card{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     gap:25px;
 }
 
-.carousel img{
-    width: 260px;
-    height: 160px;
+.card img{
+    width: 320px;
+    height: 220px;
     object-fit: cover;
     border-radius: 15px;
     cursor: pointer;
@@ -121,7 +121,7 @@ body{
     box-shadow: 0 8px 18px rgba(0,0,0,0.35);
 }
 
-.carousel img:hover{
+.card img:hover{
     transform: scale(1.03);
 }
 
@@ -207,7 +207,7 @@ body{
         font-size:2rem;
     }
 
-    .carousel img{
+    .card img{
         width:100%;
         max-width:320px;
     }
