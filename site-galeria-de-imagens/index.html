@@ -9,49 +9,49 @@
 <body>
 
 <header class="navbar">
-    <div class="logo">PALMEIRAS</div>
+    <div class="logo">⚽ PALMEIRAS STREAM</div>
 </header>
 
 <section class="hero">
     <div class="hero-content">
-        <h1>História do Verdão</h1>
-        <p>Títulos, ídolos e momentos que marcaram gerações</p>
+        <h1>O legado do Verdão em um só lugar</h1>
+        <p>Títulos, ídolos e momentos históricos</p>
     </div>
 </section>
 
-<div class="container">
+<section class="row">
+    <h2>Títulos recentes</h2>
+    <div class="carousel">
+        <img src="img/t1.jpg" onclick="openModal('Libertadores 2020', this.src)">
+        <img src="img/t2.jpg" onclick="openModal('Brasileirão 2022', this.src)">
+        <img src="img/t3.jpg" onclick="openModal('Paulistão', this.src)">
+        <img src="img/t4.jpg" onclick="openModal('Recopa', this.src)">
+    </div>
+</section>
 
-    <section class="row">
-        <h2>Títulos Históricos</h2>
-        <div class="grid">
-            <img src="img/t1.jpg" onclick="openModal(this.src)">
-            <img src="img/t2.jpg" onclick="openModal(this.src)">
-            <img src="img/t3.jpg" onclick="openModal(this.src)">
-        </div>
-    </section>
+<section class="row">
+    <h2>Ídolos do clube</h2>
+    <div class="carousel">
+        <img src="img/c1.jpg" onclick="openModal('Ídolo histórico', this.src)">
+        <img src="img/c2.jpg" onclick="openModal('Craque do time', this.src)">
+        <img src="img/c3.jpg" onclick="openModal('Lenda alviverde', this.src)">
+    </div>
+</section>
 
-    <section class="row">
-        <h2>Craques</h2>
-        <div class="grid">
-            <img src="img/c1.jpg" onclick="openModal(this.src)">
-            <img src="img/c2.jpg" onclick="openModal(this.src)">
-            <img src="img/c3.jpg" onclick="openModal(this.src)">
-        </div>
-    </section>
-
-    <section class="row">
-        <h2>Momentos Históricos</h2>
-        <div class="grid">
-            <img src="img/m1.jpg" onclick="openModal(this.src)">
-            <img src="img/m2.jpg" onclick="openModal(this.src)">
-            <img src="img/m3.jpg" onclick="openModal(this.src)">
-        </div>
-    </section>
-
-</div>
+<section class="row">
+    <h2>Momentos históricos</h2>
+    <div class="carousel">
+        <img src="img/m1.jpg" onclick="openModal('Final épica', this.src)">
+        <img src="img/m2.jpg" onclick="openModal('Virada histórica', this.src)">
+        <img src="img/m3.jpg" onclick="openModal('Título inesquecível', this.src)">
+    </div>
+</section>
 
 <div id="modal" onclick="closeModal()">
-    <img id="modalImg">
+    <div class="modal-box">
+        <h3 id="modalTitle"></h3>
+        <img id="modalImg">
+    </div>
 </div>
 
 <script src="script.js"></script>
