@@ -10,8 +10,6 @@ body{
     color:white;
 }
 
-/* HEADER */
-
 .header{
     display:flex;
     justify-content:center;
@@ -34,19 +32,15 @@ body{
     letter-spacing:2px;
 }
 
-/* HERO */
 
 .hero{
-    height:80vh;
-
+    height:60vh;
     background:
     linear-gradient(rgba(0,0,0,0.45),
     rgba(0,0,0,0.6)),
     url("img/allianz.jpg");
-
     background-size:cover;
     background-position:center;
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -61,7 +55,7 @@ body{
 .hero h1{
     font-size:4rem;
     margin-bottom:20px;
-    text-shadow:0 0 20px rgba(0,255,100,0.4);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .hero p{
@@ -87,13 +81,10 @@ body{
     background:#00e676;
 }
 
-/* SECTIONS */
 
 .row{
     padding:70px 40px;
 }
-
-/* TÍTULO CENTRALIZADO + LINHA */
 
 .row h2{
     text-align:center;
@@ -104,15 +95,13 @@ body{
 
 .row h2::after{
     content:"";
-    width:90px;
+    width:45px;
     height:5px;
     background:#00ff88;
     display:block;
     margin:15px auto 0;
     border-radius:10px;
 }
-
-/* CAROUSEL */
 
 .carousel{
     display:flex;
@@ -121,35 +110,20 @@ body{
     gap:25px;
 }
 
-/* IMAGENS */
-
 .carousel img{
-    width:260px;
-    height:160px;
-    object-fit:cover;
-    border-radius:15px;
-    cursor:pointer;
-
-    transition:0.35s;
-
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.35s;
     border:2px solid rgba(255,255,255,0.15);
-
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
 .carousel img:hover{
-    transform:
-    translateY(-10px)
-    scale(1.04);
-
-    box-shadow:
-    0 10px 30px rgba(0,255,120,0.3);
-
-    border-color:#00ff88;
+    transform: scale(1.03);
 }
-
-/* MODAL */
 
 #modal{
     display:none;
@@ -159,10 +133,8 @@ body{
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.9);
-
     justify-content:center;
     align-items:center;
-
     z-index:999;
 }
 
@@ -182,8 +154,6 @@ body{
     margin-bottom:20px;
     font-size:2rem;
 }
-
-/* ANIMAÇÕES */
 
 @keyframes fade{
     from{
@@ -208,8 +178,6 @@ body{
         opacity:1;
     }
 }
-
-/* RESPONSIVO */
 
 @media(max-width:768px){
 
