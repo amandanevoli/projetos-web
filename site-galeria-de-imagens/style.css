@@ -104,6 +104,13 @@ body {
   transform: scale(1.05);
 }
 
+.grid{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 #modal{
     display: none;
     position: fixed;
